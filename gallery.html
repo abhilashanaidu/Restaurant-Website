@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Photo Gallery</title>
+<style>
+      h1 {
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+      }
+      a{
+        font-size: 25px;
+        text-align: center;
+       }
+     
+      .gallery {
+        position: relative;
+        width: "displayWidth";
+        padding: 300px 0 0;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #eee;
+      }
+      .thumbnails {
+        width: "displayWidth";
+        overflow: scroll;
+      }
+      .large {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%); /* Property not explained */
+        display: none;
+        height: 280px;
+      }
+      .thumbnail {
+        height: 80px;
+        display: block;
+        border: 1px solid black; 
+        margin: 1px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: #eee;
+        width: 697px;
+        height: 100px;
+      }
+      li {
+        float: left;
+      }
+      li:hover .large {
+        display: block;
+      }
+    </style>
+</head>
+<body style="background-color:black";>
+<h1>Photo Gallery</h1>
+<div class="gallery">
+<div class="thumbnails">
+<ul>
+<li>
+    <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"/>
+    <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Barbieri_-_ViaSophia25668.jpg"/>
+</li>
+<li>
+<img class="large" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" >
+<img class="thumbnail" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"  />
+</li>
+<li>
+<img class="large" src="https://www.foodbusinessnews.net/ext/resources/2020/4/CoupleAtRestaurant_Lead.jpg?t=1587991293&width=1080"  />
+<img class="thumbnail" src="https://www.foodbusinessnews.net/ext/resources/2020/4/CoupleAtRestaurant_Lead.jpg?t=1587991293&width=1080"  />
+</li>
+<li>
+<img class="large" src="https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"  />
+<img class="thumbnail" src="https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"  />
+</li>
+<li>
+  <img class="large" src="https://www.handirestaurant.com/_assets/banner-2.jpg"  />
+  <img class="thumbnail" src="https://www.handirestaurant.com/_assets/banner-2.jpg"  />
+  </li>
+
+  
+</ul>
+</div>
+</div>
+<a href="index.html">Home</a>
+</body>
+</html>
